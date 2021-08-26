@@ -41,12 +41,12 @@
             >
             <a
               href="/dashboard-settings.html"
-              class="list-group-item list-group-item-action active"
+              class="list-group-item list-group-item-action"
               >Pengaturan Toko</a
             >
             <a
               href="/dashboard-account.html"
-              class="list-group-item list-group-item-action"
+              class="list-group-item list-group-item-action active"
               >Akun Saya</a
             >
             <a href="/index.html" class="list-group-item list-group-item-action"
@@ -132,10 +132,8 @@
           >
             <div class="container-fluid">
               <div class="dashboard-heading">
-                <h2 class="dashboard-title">Pengaturan Toko</h2>
-                <p class="dashboard-subtitle">
-                  Perubahahan Kadang Dibutuhkan untuk mencapai Kesuksesan !
-                </p>
+                <h2 class="dashboard-title">Akun Saya</h2>
+                <p class="dashboard-subtitle">Perbarui data pribadi kamu !</p>
               </div>
               <div class="dashboard-content">
                 <div class="row">
@@ -146,67 +144,98 @@
                           <div class="row">
                             <div class="col-md-6">
                               <div class="form-group">
-                                <label for="">Nama Toko</label>
-                                <input type="text" class="form-control" />
+                                <label for="alamat">Nama Pemilik Toko</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="name"
+                                  name="name"
+                                  value="Arsya Herdika"
+                                />
                               </div>
                             </div>
                             <div class="col-md-6">
                               <div class="form-group">
-                                <label for="">Kategori</label>
-                                <select name="category" class="form-control">
-                                  <option value="" disabled>
-                                    Pilih Kategori
-                                  </option>
+                                <label for="nama">Email</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="email"
+                                  name="email"
+                                  value="Arsya@herdika.com"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="nama">Alamat</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="address"
+                                  name="address"
+                                  value="Jalan Pandan Raya No 26 perumnas 1 tangerang"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="provinsi">Provinsi</label>
+                                <select
+                                  name="provinsi"
+                                  id="provinsi"
+                                  class="form-control"
+                                >
+                                  <option value="Jawa">Banten</option>
                                 </select>
                               </div>
                             </div>
                             <div class="col-md-6">
                               <div class="form-group">
-                                <label>Status Toko</label>
-                                <p class="text-muted">Tokonya Buka ga ?</p>
-                                <div
-                                  class="
-                                    custom-control
-                                    custom-radio
-                                    custom-control-inline
-                                  "
+                                <label for="kota">Kota</label>
+                                <select
+                                  name="kota"
+                                  id="kota"
+                                  class="form-control"
                                 >
-                                  <input
-                                    type="radio"
-                                    class="custom-control-input"
-                                    name="is_store_open"
-                                    id="openStoreTrue"
-                                    value="true"
-                                  />
-                                  <label
-                                    for="openStoreTrue"
-                                    class="custom-control-label"
-                                  >
-                                    Buka
-                                  </label>
-                                </div>
-                                <div
-                                  class="
-                                    custom-control
-                                    custom-radio
-                                    custom-control-inline
-                                  "
-                                >
-                                  <input
-                                    type="radio"
-                                    class="custom-control-input"
-                                    name="is_store_open"
-                                    id="openStoreFalse"
-                                    v-model="is_store_open"
-                                    :value="false"
-                                  />
-                                  <label
-                                    for="openStoreFalse"
-                                    class="custom-control-label"
-                                  >
-                                    Sementara Tutup
-                                  </label>
-                                </div>
+                                  <option value="Tangerang">Tangerang</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="kodePos">Kode Pos</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="kodePos"
+                                  name="kodePos"
+                                  value="15138"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="negara">Negara</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="negara"
+                                  name="negara"
+                                  value="Indonesia"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="noHP">No Hp</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="noHP"
+                                  name="noHP"
+                                  value="+628568780192"
+                                />
                               </div>
                             </div>
                           </div>
