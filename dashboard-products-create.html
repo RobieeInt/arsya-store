@@ -30,7 +30,7 @@
               >Dashboard</a
             >
             <a
-              href="/dashboard-product.html"
+              href="/dashboard-products.html"
               class="list-group-item list-group-item-action active"
               >Produk</a
             >
@@ -132,99 +132,66 @@
           >
             <div class="container-fluid">
               <div class="dashboard-heading">
-                <h2 class="dashboard-title">Produk saya</h2>
-                <p class="dashboard-subtitle">Mau Jual Apa hari ini ?!</p>
+                <h2 class="dashboard-title">Tambahkan Produk Baru</h2>
+                <p class="dashboard-subtitle">
+                  Collect money with all you have !
+                </p>
               </div>
               <div class="dashboard-content">
                 <div class="row">
                   <div class="col-12">
-                    <a
-                      href="/dashboard-products-create.html"
-                      class="btn btn-success"
-                      >Tambahkan Produk</a
-                    >
-                  </div>
-                </div>
-                <div class="row mt-4">
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <a
-                      href="/dashboard-product-details.html"
-                      class="card card-dashboard-product d-block"
-                    >
-                      <div class="card-body">
-                        <img
-                          src="/images/product-card-1.png"
-                          alt=""
-                          class="w-100 mb-2"
-                        />
-                        <div class="product-title">Syrup Simple</div>
-                        <div class="product-category">Foods</div>
+                    <form action="">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="">Nama Produk</label>
+                                <input type="text" class="form-control" />
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="">Harga</label>
+                                <input type="number" class="form-control" />
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <label for="">Deskripsi</label>
+                                <textarea name="editor"></textarea>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="">Kategori</label>
+                                <select name="category" class="form-control">
+                                  <option value="" disabled>
+                                    Pilih Kategori
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="">Deskripsi Produk</label>
+                                <input type="file" class="form-control" />
+                                <p class="text-muted">
+                                  Kamu Bisa Pilih Lebih dari 1 File
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col text-left mt-2">
+                              <button type="submit" class="btn btn-success">
+                                Simpan Produk
+                              </button>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                    </a>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <a
-                      href="/dashboard-product-details.html"
-                      class="card card-dashboard-product d-block"
-                    >
-                      <div class="card-body">
-                        <img
-                          src="/images/product-card-2.png"
-                          alt=""
-                          class="w-100 mb-2"
-                        />
-                        <div class="product-title">Patu Nike KW</div>
-                        <div class="product-category">Sneaker</div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <a
-                      href="/dashboard-product-details.html"
-                      class="card card-dashboard-product d-block"
-                    >
-                      <div class="card-body">
-                        <img
-                          src="/images/product-card-3.png"
-                          alt=""
-                          class="w-100 mb-2"
-                        />
-                        <div class="product-title">Tatakan Gelas</div>
-                        <div class="product-category">Peralatan</div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <a
-                      href="/dashboard-product-details.html"
-                      class="card card-dashboard-product d-block"
-                    >
-                      <div class="card-body">
-                        <img
-                          src="/images/product-card-4.png"
-                          alt=""
-                          class="w-100 mb-2"
-                        />
-                        <div class="product-title">PATU Adidas KW</div>
-                        <div class="product-category">Sneaker</div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <a
-                      href="/dashboard-product-details.html"
-                      class="card card-dashboard-product d-block"
-                    >
-                      <div class="card-body">
-                        <img
-                          src="/images/product-card-5.png"
-                          alt=""
-                          class="w-100 mb-2"
-                        />
-                        <div class="product-title">Sofa Nenek</div>
-                        <div class="product-category">Furniture</div>
-                      </div>
-                    </a>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -238,6 +205,10 @@
     <script src="/vendor/jquery/jquery.slim.min.js"></script>
     <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+    <script>
+      CKEDITOR.replace("editor");
+    </script>
     <script>
       AOS.init();
     </script>
